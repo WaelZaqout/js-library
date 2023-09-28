@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bookshelf</title>
+</head>
+<body>
+    <header>
+        <h1>My Bookshelf</h1>
+    </header>
+    <main>
+        <div class="button-container">
+            <button id="newBookButton">إضافة كتاب</button>
+            <button id="deleteBookButton">حذف كتاب</button>
+        </div>
+        <div class="bookshelf-container">
+            <div class="shelf" id="shelf1"></div>
+            <div class="shelf" id="shelf2"></div>
+        </div>
+    </main>
+    <div class="modal" id="modal">
+        <form id="bookForm">
+            <h2>إضافة كتاب جديد</h2>
+            <label for="title">العنوان:</label>
+            <input type="text" id="title" required>
+            <label for="author">المؤلف:</label>
+            <input type="text" id="author" required>
+            <label for="image">اختر صورة:</label>
+            <!-- <input type="file" id="image" accept="image/*" required> -->
+            <input type="file" id="image" accept="image/*" required>
+            <input type="submit" value="إضافة">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
